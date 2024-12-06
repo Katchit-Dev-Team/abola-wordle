@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>Wordle</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+
+        <link rel="stylesheet" href="wordle.css">
+        <script src="wordle.js"></script>
+
+        <style>
+            /* Estilo para o banner */
+            #banner {
+                width: 100%;
+                height: 100px;
+                background: linear-gradient(to right, lightgray, white);
+                text-align: center;
+                line-height: 100px; /* Centraliza verticalmente o texto */
+                font-size: 30px;
+                font-weight: bold;
+                color: black;
+                position: fixed; /* Mantém o banner fixo no topo */
+                top: 0;
+                z-index: 1000;
+            }
+
+            /* Ajuste para o restante do conteúdo */
+            body {
+                margin-top: 120px; /* Evita sobreposição do banner */
+            }
+
+            #logo-container {
+                text-align: center;
+                margin-top: 20px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- Adicione o banner -->
+        <div id="banner">Aqui são anúncios da Bola</div>
+
+        <!-- Tabuleiro do jogo -->
+        <div id="board">
+        </div>
+
+        <!-- Adicione o logo no final -->
+        <div id="logo-container">
+            <img src="logo.png" alt="Logo da A Bola" id="logo" style="width: 150px; height: auto;">
+        </div>
+
+        <br>
+        <h1 id="answer"></h1>
+    </body>
+</html>
